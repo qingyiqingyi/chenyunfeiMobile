@@ -3,11 +3,14 @@
     margin: 0;
     padding: 0;
     -webkit-touch-callout: none;
+    /*touch-callout: none;*/
     -webkit-tap-highlight-color: transparent;
+    /*tap-highlight-color: transparent;*/
 }
 
 html {
     -webkit-text-size-adjust: none;
+    /*text-size-adjust: none;*/
 }
 
 body {
@@ -113,11 +116,9 @@ html, body {
     height: .36rem;
     background: url("../img/web-swipe-tip.png") no-repeat;
     background-size: 100% 100%;
-
     opacity: 1;
     -webkit-animation: arrowFlash 1s linear 0s infinite;
     animation: arrowFlash 1s linear 0s infinite;
-
     /*--当动画运动完成后可以停留在最后一帧的位置(必须加):animation是模拟的帧动画,我们虽然看见元素在运动,但是元素的位置是没有改变,当动画完成后,我们的元素还停留在开始的位置；“fill-mode: both”设置的就是动画结束停留在最后一帧的位置--*/
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
@@ -203,10 +204,13 @@ html, body {
 }
 
 #page1 .one {
+    -webkit-animation: fadeInUp 1000ms ease 600ms both running;
     animation: fadeInUp 1000ms ease 600ms both running;
+
 }
 
 .pageFir > .one > svg {
+    -webkit-transform: rotate(230deg);
     transform: rotate(230deg);
     position: absolute;
     width: 1rem;
@@ -228,10 +232,13 @@ html, body {
 }
 
 #page1 .two {
+    -webkit-animation: fadeInNormal 1000ms ease 1500ms both running;
     animation: fadeInNormal 1000ms ease 1500ms both running;
+
 }
 
 .pageFir > .two > svg {
+    -webkit-transform: rotate(16deg);
     transform: rotate(16deg);
     position: absolute;
     width: 2.41rem;
@@ -253,11 +260,15 @@ html, body {
 }
 
 #page1 .three {
+    -webkit-animation: fadeInRight 1000ms ease 600ms both running;
     animation: fadeInRight 1000ms ease 600ms both running;
+
 }
 
 .pageFir > .three > svg {
+    -webkit-transform: rotate(164deg);
     transform: rotate(164deg);
+
     position: absolute;
     width: 3.82rem;
     height: 1.6rem;
@@ -277,11 +288,15 @@ html, body {
 }
 
 #page1 .four {
+    -webkit-animation: rotateIn 1000ms ease 600ms both running;
     animation: rotateIn 1000ms ease 600ms both running;
+
 }
 
 .pageFir > .four > svg {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+
     position: absolute;
     width: 2.5rem;
     height: 0.02rem;
@@ -298,14 +313,17 @@ html, body {
 }
 
 #page1 .five {
-    animation: fadeInLeft 1000ms ease 1000ms both running;
     -webkit-animation: fadeInLeft 1000ms ease 1000ms both running;
+    animation: fadeInLeft 1000ms ease 1000ms both running;
+
 }
 
 .pageFir > .five > div {
-
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transform-origin: center center 0;
     transform-origin: center center 0;
+
     width: 100%;
     color: rgb(0, 0, 0);
     font-size: 0.56rem;
@@ -331,12 +349,17 @@ html, body {
 }
 
 #page1 .six {
+    -webkit-animation: fadeInLeft 1200ms ease 1000ms both running;
     animation: fadeInLeft 1200ms ease 1000ms both running;
+
 }
 
 .pageFir > .six > div {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transform-origin: center center 0;
     transform-origin: center center 0;
+
     width: 100%;
     color: rgb(0, 0, 0);
     font-size: 0.14rem;
@@ -359,11 +382,14 @@ html, body {
 }
 
 #page1 .seven {
+    -webkit-animation: fadeInUp 3000ms ease 1000ms both running;
     animation: fadeInUp 3000ms ease 1000ms both running;
 }
 
 .pageFir > .seven > div {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transform-origin: center center 0;
     transform-origin: center center 0;
     width: 100%;
     color: rgb(238, 238, 238);
@@ -393,10 +419,12 @@ html, body {
 }
 
 #page2 .one {
+    -webkit-animation: fadeIn 1000ms ease 600ms both;
     animation: fadeIn 1000ms ease 600ms both;
 }
 
 .pageSec > .one > svg {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
     position: absolute;
     width: 0.84rem;
@@ -415,10 +443,12 @@ html, body {
 }
 
 #page2 .two {
+    -webkit-animation: fadeInNormal 4000ms ease 800ms both;
     animation: fadeInNormal 4000ms ease 800ms both;
 }
 
 .pageSec .two img {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
     position: absolute;
     width: 100%;
@@ -457,6 +487,7 @@ html, body {
 }
 
 #page2 .three {
+    -webkit-animation: fadeInLeft 1000ms ease 1000ms both;
     animation: fadeInLeft 1000ms ease 1000ms both;
 }
 
@@ -470,10 +501,12 @@ html, body {
 }
 
 #page2 .four {
+    -webkit-animation: pullDown 1000ms ease 600ms both;
     animation: pullDown 1000ms ease 600ms both;
 }
 
 .pageSec > .four > svg {
+    -webkit-transform: rotate(8deg);
     transform: rotate(8deg);
     position: absolute;
     width: 0.98rem;
@@ -492,10 +525,12 @@ html, body {
 }
 
 #page2 .five {
+    -webkit-animation: fadeInLeft 1000ms ease 600ms both;
     animation: fadeInLeft 1000ms ease 600ms both;
 }
 
 .pageSec > .five > svg {
+    -webkit-transform: rotate(8deg);
     transform: rotate(8deg);
     position: absolute;
     width: 1.31rem;
@@ -516,10 +551,12 @@ html, body {
 }
 
 #page2 .six {
+    -webkit-animation: fadeInUp 1000ms ease 800ms both running;
     animation: fadeInUp 1000ms ease 800ms both running;
 }
 
 .pageSec > .six > svg {
+    -webkit-transform: rotate(16deg);
     transform: rotate(16deg);
     position: absolute;
     width: 2.41rem;
@@ -537,12 +574,15 @@ html, body {
 }
 
 #page2 .seven {
-    animation: fadeInRight 1000ms ease 1200ms both running;
     -webkit-animation: fadeInRight 1000ms ease 1200ms both running;
+    animation: fadeInRight 1000ms ease 1200ms both running;
+
 }
 
 .pageSec > .seven > div {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transform-origin: center center 0;
     transform-origin: center center 0;
     width: 100%;
     color: rgb(0, 0, 0);
@@ -568,12 +608,15 @@ html, body {
 }
 
 #page2 .eight {
-    animation: fadeInNormal 1200ms ease 1200ms both running;
     -webkit-animation: fadeInNormal 1200ms ease 1200ms both running;
+    animation: fadeInNormal 1200ms ease 1200ms both running;
+
 }
 
 .pageSec > .eight > div {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transform-origin: center center 0;
     transform-origin: center center 0;
     width: 100%;
     color: rgb(84, 84, 84);
@@ -596,11 +639,14 @@ html, body {
     left: .68rem;
 }
 #page2 .nine {
-    animation: fadeInNormal 1200ms ease 1200ms both running;
     -webkit-animation: fadeInNormal 1200ms ease 1200ms both running;
+    animation: fadeInNormal 1200ms ease 1200ms both running;
+
 }
 .pageSec > .nine > div {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transform-origin: center center 0;
     transform-origin: center center 0;
     width: 100%;
     color: rgb(84, 84, 84);
@@ -623,11 +669,14 @@ html, body {
     left: .68rem;
 }
 #page2 .ten {
-    animation: fadeInNormal 1200ms ease 1400ms both running;
     -webkit-animation: fadeInNormal 1200ms ease 1400ms both running;
+    animation: fadeInNormal 1200ms ease 1400ms both running;
+
 }
 .pageSec > .ten > div {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transform-origin: center center 0;
     transform-origin: center center 0;
     width: 100%;
     color: rgb(84, 84, 84);
@@ -650,11 +699,14 @@ html, body {
     left: .68rem;
 }
 #page2 .elev {
-    animation: fadeInNormal 1200ms ease 1600ms both running;
     -webkit-animation: fadeInNormal 1200ms ease 1600ms both running;
+    animation: fadeInNormal 1200ms ease 1600ms both running;
+
 }
 .pageSec > .elev > div {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transform-origin: center center 0;
     transform-origin: center center 0;
     width: 100%;
     color: rgb(84, 84, 84);
@@ -677,11 +729,14 @@ html, body {
     left: .68rem;
 }
 #page2 .twe {
-    animation: fadeInNormal 1200ms ease 1600ms both running;
     -webkit-animation: fadeInNormal 1200ms ease 1600ms both running;
+    animation: fadeInNormal 1200ms ease 1600ms both running;
+
 }
 .pageSec > .twe > div {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transform-origin: center center 0;
     transform-origin: center center 0;
     width: 100%;
     color: rgb(84, 84, 84);
@@ -704,11 +759,14 @@ html, body {
     left:1.78rem;
 }
 #page2 .thirteen {
-    animation: fadeInRight 1200ms ease 2000ms both running;
     -webkit-animation: fadeInRight 1200ms ease 2000ms both running;
+    animation: fadeInRight 1200ms ease 2000ms both running;
+
 }
 .pageSec > .thirteen > div {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transform-origin: center center 0;
     transform-origin: center center 0;
     width: 100%;
     color: rgb(255, 255, 255);
@@ -731,11 +789,14 @@ html, body {
     left:1.78rem;
 }
 #page2 .fourteen {
-    animation: fadeInRight 1200ms ease 2200ms both running;
     -webkit-animation: fadeInRight 1200ms ease 2200ms both running;
+    animation: fadeInRight 1200ms ease 2200ms both running;
+
 }
 .pageSec > .fourteen > div {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transform-origin: center center 0;
     transform-origin: center center 0;
     width: 100%;
     color: rgb(255, 255, 255);
@@ -758,11 +819,14 @@ html, body {
     left:1.78rem;
 }
 #page2 .fifteen {
-    animation: fadeInRight 1200ms ease 2400ms both running;
     -webkit-animation: fadeInRight 1200ms ease 2400ms both running;
+    animation: fadeInRight 1200ms ease 2400ms both running;
+
 }
 .pageSec > .fifteen > div {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transform-origin: center center 0;
     transform-origin: center center 0;
     width: 100%;
     color: rgb(255, 255, 255);
@@ -785,11 +849,14 @@ html, body {
     left:1.78rem;
 }
 #page2 .sixteen {
-    animation: fadeInRight 1200ms ease 2600ms both running;
     -webkit-animation: fadeInRight 1200ms ease 2600ms both running;
+    animation: fadeInRight 1200ms ease 2600ms both running;
+
 }
 .pageSec > .sixteen > div {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transform-origin: center center 0;
     transform-origin: center center 0;
     width: 100%;
     color: rgb(255, 255, 255);
@@ -812,11 +879,14 @@ html, body {
     left:.05rem;
 }
 #page2 .seventeen {
-    animation: fadeInNormal 1000ms ease 1000ms both running;
     -webkit-animation: fadeInNormal 1000ms ease 1000ms both running;
+    animation: fadeInNormal 1000ms ease 1000ms both running;
+
 }
 .pageSec > .seventeen > div {
+    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
+    -webkit-transform-origin: center center 0;
     transform-origin: center center 0;
     width: 100%;
     color: rgb(247, 223, 0);
@@ -840,11 +910,14 @@ html, body {
     left:.68rem;
 }
 #page2 .eightteen {
-    animation: fadeInDown 1200ms ease 2000ms both running;
     -webkit-animation: fadeInDown 1200ms ease 2000ms both running;
+    animation: fadeInDown 1200ms ease 2000ms both running;
+
 }
 .pageSec > .eightteen > div {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transform-origin: center center 0;
     transform-origin: center center 0;
     width: 100%;
     color: rgb(35, 149, 115);
@@ -868,10 +941,12 @@ html, body {
      opacity: 0;
  }
 #page2 .nineteen {
+    -webkit-animation: zoomIn 2000ms ease 800ms both;
     animation: zoomIn 2000ms ease 800ms both;
     opacity: 1;
 }
 .pageSec .nineteen img {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
     position: absolute;
     width: 100%;
@@ -892,10 +967,12 @@ html, body {
     opacity: 0;
 }
 #page2 .twenty {
+    -webkit-animation:rotateIn 1000ms ease 2000ms both;
     animation:rotateIn 1000ms ease 2000ms both;
     /*opacity: 1;*/
 }
 .pageSec .twenty img {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
     position: absolute;
     width: 100%;
@@ -907,7 +984,7 @@ html, body {
     background-size: 100% 100%;
     background-position: 0 0;
     background-repeat: no-repeat;
-    box-shadow: black 0px 0px 0px;
+    box-shadow: black 0 0 0;
     /*opacity: 1;*/
 }
 /*---------------------第三页-----------------------*/
@@ -924,10 +1001,12 @@ html, body {
 }
 
 #page3 .one {
+    -webkit-animation: fadeInUp 1000ms ease 600ms both;
     animation: fadeInUp 1000ms ease 600ms both;
 }
 
 .pageThi > .one > svg {
+    -webkit-transform: rotate(59deg);
     transform: rotate(59deg);
     position: absolute;
     width: 0.3rem;
@@ -948,10 +1027,12 @@ html, body {
 }
 
 #page3 .two {
+    -webkit-animation: fadeInLeft 1000ms ease 1000ms both;
     animation: fadeInLeft 1000ms ease 1000ms both;
 }
 
 .pageThi > .two > svg {
+    -webkit-transform: rotate(10deg);
     transform: rotate(10deg);
     position: absolute;
     width: 3.51rem;
@@ -972,10 +1053,12 @@ html, body {
 }
 
 #page3 .three {
+    -webkit-animation: slideRight 1000ms ease 600ms both;
     animation: slideRight 1000ms ease 600ms both;
 }
 
 .pageThi > .three > svg {
+    -webkit-transform: rotate(344deg);
     transform: rotate(344deg);
     position: absolute;
     width: 2.38rem;
@@ -993,11 +1076,14 @@ html, body {
 }
 
 #page3 .four {
+    -webkit-animation: rotateIn 1000ms ease 1200ms both;
     animation: rotateIn 1000ms ease 1200ms both;
 }
 
 .pageThi > .four > div {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transform-origin: center center 0;
     transform-origin: center center 0;
     width: 100%;
     color: rgb(0, 0, 0);
@@ -1023,11 +1109,14 @@ html, body {
 }
 
 #page3 .five {
+    -webkit-animation: fadeInLeft 1200ms ease 1000ms both;
     animation: fadeInLeft 1200ms ease 1000ms both;
 }
 
 .pageThi > .five > div {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transform-origin: center center 0;
     transform-origin: center center 0;
     width: 100%;
     color: rgb(84, 84, 84);
@@ -1052,11 +1141,14 @@ html, body {
 }
 
 #page3 .six {
+    -webkit-animation: fadeInLeft 1200ms ease 1200ms both;
     animation: fadeInLeft 1200ms ease 1200ms both;
 }
 
 .pageThi > .six > div {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transform-origin: center center 0;
     transform-origin: center center 0;
     wwidth: 100%;
     color: rgb(84, 84, 84);
@@ -1081,11 +1173,14 @@ html, body {
 }
 
 #page3 .seven {
+    -webkit-animation: fadeInLeft 1200ms ease 1400ms both;
     animation: fadeInLeft 1200ms ease 1400ms both;
 }
 
 .pageThi > .seven > div {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transform-origin: center center 0;
     transform-origin: center center 0;
     width: 100%;
     color: rgb(84, 84, 84);
@@ -1110,12 +1205,14 @@ html, body {
 }
 
 #page3 .eight {
+    -webkit-animation: fadeInLeft 1200ms ease 1600ms both;
     animation: fadeInLeft 1200ms ease 1600ms both;
 }
 
 .pageThi > .eight > div {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
-    transform-origin: center center 0;
+    -webkit-transform-origin: center center 0;
     width: 100%;
     color: rgb(84, 84, 84);
     font-size: 0.13rem;
@@ -1141,10 +1238,12 @@ html, body {
 }
 
 #page3 .nine {
+    -webkit-animation: stretchRight 2000ms ease 2000ms both;
     animation: stretchRight 2000ms ease 2000ms both;
 }
 
 .pageThi > .nine > svg {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
     position: absolute;
     width: 1.5rem;
@@ -1164,10 +1263,12 @@ html, body {
 }
 
 #page3 .ten {
+    -webkit-animation: stretchRight 2000ms ease 2200ms both;
     animation: stretchRight 2000ms ease 2200ms both;
 }
 
 .pageThi > .ten > svg {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
     position: absolute;
     width: 0.5rem;
@@ -1187,10 +1288,12 @@ html, body {
 }
 
 #page3 .eleven {
+    -webkit-animation: stretchRight 2000ms ease 2400ms both;
     animation: stretchRight 2000ms ease 2400ms both;
 }
 
 .pageThi > .eleven > svg {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
     position: absolute;
     width: 1.25rem;
@@ -1210,10 +1313,12 @@ html, body {
 }
 
 #page3 .twelve {
+    -webkit-animation: stretchRight 2000ms ease 2600ms both;
     animation: stretchRight 2000ms ease 2600ms both;
 }
 
 .pageThi > .twelve > svg {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
     position: absolute;
     width: 1rem;
@@ -1232,9 +1337,11 @@ html, body {
     left: -.65rem;
 }
 #page4 .one {
+    -webkit-animation: fadeInDown 1000ms ease 600ms both running;
     animation: fadeInDown 1000ms ease 600ms both running;
 }
 .pageFou > .one > svg {
+    -webkit-transform: rotate(115deg);
     transform: rotate(115deg);
     position: absolute;
     width: 2.55rem;
@@ -1251,9 +1358,11 @@ html, body {
     left: 1.01rem;
 }
 #page4 .two {
+    -webkit-animation: rotateIn 1000ms ease 600ms both running;
     animation: rotateIn 1000ms ease 600ms both running;
 }
 .pageFou > .two > svg {
+    -webkit-transform: rotate(284deg);
     transform: rotate(284deg);
     position: absolute;
     width: .25rem;
@@ -1270,9 +1379,11 @@ html, body {
     left: .56rem;
 }
 #page4 .three {
+    -webkit-animation: slideRight 1000ms ease 1600ms both running;
     animation: slideRight 1000ms ease 1600ms both running;
 }
 .pageFou > .three > svg {
+    -webkit-transform: rotate(193deg);
     transform: rotate(193deg);
     position: absolute;
     width: 3.64rem;
@@ -1289,11 +1400,14 @@ html, body {
 }
 
 #page4 .four {
-    animation: rotateIn 1000ms ease 1000ms both running;
     -webkit-animation: rotateIn 1000ms ease 1000ms both running;
+    animation: rotateIn 1000ms ease 1000ms both running;
+
 }
 .pageFou > .four > div {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transform-origin: center center 0;
     transform-origin: center center 0;
     width: 100%;
     color: rgb(0, 0, 0);
@@ -1317,11 +1431,14 @@ html, body {
     left: .44rem;
 }
 #page4 .five {
-    animation: fadeInLeft 1200ms ease 1000ms both running;
     -webkit-animation: fadeInLeft 1200ms ease 1000ms both running;
+    animation: fadeInLeft 1200ms ease 1000ms both running;
+
 }
 .pageFou > .five > div {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transform-origin: center center 0;
     transform-origin: center center 0;
     width: 100%;
     font-size: .15rem;
@@ -1344,11 +1461,14 @@ html, body {
     left: 1.66rem;
 }
 #page4 .six {
-    animation: fadeInLeft 1200ms ease 1000ms both running;
     -webkit-animation: fadeInLeft 1200ms ease 1000ms both running;
+    animation: fadeInLeft 1200ms ease 1000ms both running;
+
 }
 .pageFou > .six > div {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transform-origin: center center 0;
     transform-origin: center center 0;
     width: 100%;
     font-size: .15rem;
@@ -1371,11 +1491,14 @@ html, body {
     left: .44rem;
 }
 #page4 .seven {
-    animation: flipInX 2000ms ease 1400ms both running;
     -webkit-animation:flipInX 2000ms ease 1400ms both running;
+    animation: flipInX 2000ms ease 1400ms both running;
+
 }
 .pageFou > .seven > div {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transform-origin: center center 0;
     transform-origin: center center 0;
     width: 100%;
     font-size: .15rem;
@@ -1399,11 +1522,14 @@ html, body {
     left: .44rem;
 }
 #page4 .eight {
-    animation: fadeInLeft 1200ms ease 1800ms both running;
     -webkit-animation: fadeInLeft 1200ms ease 1800ms both running;
+    animation: fadeInLeft 1200ms ease 1800ms both running;
+
 }
 .pageFou > .eight > div {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transform-origin: center center 0;
     transform-origin: center center 0;
     width: 100%;
     font-size: .15rem;
@@ -1426,11 +1552,14 @@ html, body {
     left: 1.66rem;
 }
 #page4 .nine {
-    animation: fadeInLeft 1200ms ease 1600ms both running;
     -webkit-animation: fadeInLeft 1200ms ease 1600ms both running;
+    animation: fadeInLeft 1200ms ease 1600ms both running;
+
 }
 .pageFou > .nine > div {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transform-origin: center center 0;
     transform-origin: center center 0;
     width: 100%;
     font-size: .15rem;
@@ -1453,11 +1582,14 @@ html, body {
     left: .44rem;
 }
 #page4 .ten {
-    animation: fadeInUp 2000ms ease 1500ms both running;
     -webkit-animation: fadeInUp 2000ms ease 1500ms both running;
+    animation: fadeInUp 2000ms ease 1500ms both running;
+
 }
 .pageFou > .ten > div {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transform-origin: center center 0;
     transform-origin: center center 0;
     color: rgb(35, 37,41);
     width: 100%;
@@ -1482,9 +1614,11 @@ html, body {
     left: 1.87rem;
 }
 #page5 .one {
+    -webkit-animation: rotateIn 1000ms ease 600ms both running;
     animation: rotateIn 1000ms ease 600ms both running;
 }
 .pageFif > .one > svg {
+    -webkit-transform: rotate(32deg);
     transform: rotate(32deg);
     position: absolute;
     width: .45rem;
@@ -1501,9 +1635,11 @@ html, body {
     left: 1.64rem;
 }
 #page5 .two {
+    -webkit-animation: slideRight 1000ms ease 1600ms both running;
     animation: slideRight 1000ms ease 1600ms both running;
 }
 .pageFif > .two > svg {
+    -webkit-transform: rotate(81deg);
     transform: rotate(81deg);
     position: absolute;
     width:3.64rem;
@@ -1520,9 +1656,11 @@ html, body {
     left: -.46rem;
 }
 #page5 .three {
+    -webkit-animation: fadeInDown 1000ms ease 600ms both running;
     animation: fadeInDown 1000ms ease 600ms both running;
 }
 .pageFif > .three > svg {
+    -webkit-transform: rotate(202deg);
     transform: rotate(202deg);
     position: absolute;
     width:4.05rem;
@@ -1539,11 +1677,14 @@ html, body {
 }
 
 #page5 .four {
-    animation: rotateIn 1000ms ease 1200ms both running;
     -webkit-animation: rotateIn 1000ms ease 1200ms both running;
+    animation: rotateIn 1000ms ease 1200ms both running;
+
 }
 .pageFif > .four > div {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transform-origin: center center 0;
     transform-origin: center center 0;
     width: 100%;
     color: rgb(0, 0, 0);
@@ -1567,11 +1708,14 @@ html, body {
     left: .44rem;
 }
 #page5 .five {
+    -webkit-animation: fadeInDown 1200ms ease 1000ms both running;
     animation: fadeInDown 1200ms ease 1000ms both running;
     -webkit-animation: fadeInDown 1200ms ease 1000ms both running;
 }
 .pageFif > .five > div {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transform-origin: center center 0;
     transform-origin: center center 0;
     width: 100%;
     font-size: .15rem;
@@ -1594,11 +1738,14 @@ html, body {
     left: 1.66rem;
 }
 #page5 .six {
-    animation: fadeInRight 1200ms ease 1000ms both running;
     -webkit-animation: fadeInRight 1200ms ease 1000ms both running;
+    animation: fadeInRight 1200ms ease 1000ms both running;
+
 }
 .pageFif > .six > div {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transform-origin: center center 0;
     transform-origin: center center 0;
     width: 100%;
     font-size: .15rem;
@@ -1621,11 +1768,14 @@ html, body {
     left: .44rem;
 }
 #page5 .seven {
-    animation: fadeInRight 1200ms ease 1200ms both running;
     -webkit-animation:fadeInRight 1200ms ease 1200ms both running;
+    animation: fadeInRight 1200ms ease 1200ms both running;
+
 }
 .pageFif > .seven > div {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transform-origin: center center 0;
     transform-origin: center center 0;
     width: 100%;
     font-size: .15rem;
@@ -1649,11 +1799,14 @@ html, body {
     left:1.66rem;
 }
 #page5 .eight {
-    animation: fadeInUp 1200ms ease 1400ms both running;
     -webkit-animation: fadeInUp 1200ms ease 1400ms both running;
+    animation: fadeInUp 1200ms ease 1400ms both running;
+
 }
 .pageFif > .eight > div {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transform-origin: center center 0;
     transform-origin: center center 0;
     width: 100%;
     font-size: .15rem;
@@ -1676,11 +1829,14 @@ html, body {
     left: .44rem;
 }
 #page5 .nine {
-    animation: fadeInUp 1200ms ease 1800ms both running;
     -webkit-animation: fadeInUp 1200ms ease 1800ms both running;
+    animation: fadeInUp 1200ms ease 1800ms both running;
+
 }
 .pageFif > .nine > div {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transform-origin: center center 0;
     transform-origin: center center 0;
     width: 100%;
     font-size: .15rem;
@@ -1703,11 +1859,14 @@ html, body {
     left: .44rem;
 }
 #page5 .ten {
-    animation: fadeInUp 3000ms ease 2200ms both running;
     -webkit-animation: fadeInUp 3000ms ease 2200ms both running;
+    animation: fadeInUp 3000ms ease 2200ms both running;
+
 }
 .pageFif > .ten > div {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transform-origin: center center 0;
     transform-origin: center center 0;
     color: rgb(35, 37,41);
     width: 100%;
@@ -1730,11 +1889,14 @@ html, body {
     left: 1.66rem;
 }
 #page5 .eleve {
-    animation: fadeInRight 1200ms ease 2000ms both running;
     -webkit-animation:fadeInRight 1200ms ease 2000ms both running;
+    animation: fadeInRight 1200ms ease 2000ms both running;
+
 }
 .pageFif > .eleve > div {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transform-origin: center center 0;
     transform-origin: center center 0;
     width: 100%;
     font-size: .15rem;
@@ -1761,9 +1923,11 @@ html, body {
     left: -.03rem;
 }
 #page6 .one {
+    -webkit-animation: fadeInUp 1000ms ease 600ms both running;
     animation: fadeInUp 1000ms ease 600ms both running;
 }
 .pageSix > .one > svg {
+    -webkit-transform: rotate(268deg);
     transform: rotate(268deg);
     position: absolute;
     width:6.04rem;
@@ -1780,9 +1944,11 @@ html, body {
     left: 2.18rem;
 }
 #page6 .two {
+    -webkit-animation: fadeInLeft  1000ms ease 1600ms both running;
     animation: fadeInLeft  1000ms ease 1600ms both running;
 }
 .pageSix > .two > svg {
+    -webkit-transform: rotate(28deg);
     transform: rotate(28deg);
     position: absolute;
     width:1.41rem;
@@ -1799,9 +1965,11 @@ html, body {
     left: .98rem;
 }
 #page6 .three {
+    -webkit-animation: rotateIn 1000ms ease 600ms both running;
     animation: rotateIn 1000ms ease 600ms both running;
 }
 .pageSix > .three > svg {
+    -webkit-transform: rotate(73deg);
     transform: rotate(73deg);
     position: absolute;
     width:.42rem;
@@ -1817,11 +1985,14 @@ html, body {
     left: 0rem;
 }
 #page6 .four {
-    animation: rotateIn 1000ms ease 1200ms both running;
     -webkit-animation: rotateIn 1000ms ease 1200ms both running;
+    animation: rotateIn 1000ms ease 1200ms both running;
+
 }
 .pageSix > .four > div {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transform-origin: center center 0;
     transform-origin: center center 0;
     width: 100%;
     color: rgb(0, 0, 0);
@@ -1845,11 +2016,14 @@ html, body {
     left: .44rem;
 }
 #page6 .five {
-    animation: fadeInUp 3000ms ease 2200ms both running;
     -webkit-animation: fadeInUp 3000ms ease 2200ms both running;
+    animation: fadeInUp 3000ms ease 2200ms both running;
+
 }
 .pageSix > .five > div {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transform-origin: center center 0;
     transform-origin: center center 0;
     color: rgb(35, 37,41);
     width: 100%;
@@ -1949,7 +2123,7 @@ div {
     }
 }
 
-@keyframes fadeInNormal {
+@-webkit-keyframes fadeInNormal {
     0% {
         opacity: 0;
     }
@@ -1957,8 +2131,7 @@ div {
         opacity: 1;
     }
 }
-
-@-webkit-keyframes fadeInNormal {
+@keyframes fadeInNormal {
     0% {
         opacity: 0;
     }
@@ -1995,6 +2168,28 @@ div {
     }
 }
 
+@-webkit-keyframes fadeIn {
+    0% {
+        -webkit-transform: scale(0) translateZ(0);
+        transform: scale(0) translateZ(0);
+        opacity: 0;
+    }
+    60% {
+        -webkit-transform: scale(1.1) translateZ(0);
+        transform: scale(1.1) translateZ(0);
+        opacity: 1;
+    }
+    80% {
+        -webkit-transform: scale(0.9) translateZ(0);
+        transform: scale(0.9) translateZ(0);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1) translateZ(0);
+        transform: scale(1) translateZ(0);
+        opacity: 1;
+    }
+}
 @keyframes fadeIn {
     0% {
         -webkit-transform: scale(0) translateZ(0);
@@ -2022,33 +2217,16 @@ div {
     }
 }
 
-@-webkit-keyframes fadeIn {
-    0% {
-        -webkit-transform: scale(0) translateZ(0);
-        opacity: 0;
-    }
-    60% {
-        -webkit-transform: scale(1.1) translateZ(0);
-        opacity: 1;
-    }
-    80% {
-        -webkit-transform: scale(0.9) translateZ(0);
-        opacity: 1;
-    }
-    100% {
-        -webkit-transform: scale(1) translateZ(0);
-        opacity: 1;
-    }
-}
-
 @-webkit-keyframes rotateIn {
     from {
         opacity: 0;
         -webkit-transform: rotate(-220deg);
+        transform: rotate(-220deg);
     }
     to {
         opacity: 1;
         -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
     }
 }
 
@@ -2125,6 +2303,38 @@ div {
     }
 }
 
+@-webkit-keyframes pullDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: scaleY(0.1) translateZ(0);
+        transform: scaleY(0.1) translateZ(0);
+    }
+    40% {
+        opacity: 1;
+        -webkit-transform: scaleY(1.02) translateZ(0);
+        transform: scaleY(1.02) translateZ(0);
+    }
+    60% {
+        -webkit-transform: scaleY(0.98) translateZ(0);
+    }
+    80% {
+        -webkit-transform: scaleY(1.01) translateZ(0);
+        transform: scaleY(1.01) translateZ(0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scaleY(0.98) translateZ(0);
+        transform: scaleY(0.98) translateZ(0);
+    }
+    80% {
+        -webkit-transform: scaleY(1.01) translateZ(0);
+        transform: scaleY(1.01) translateZ(0);
+    }
+    100% {
+        -webkit-transform: scaleY(1) translateZ(0);
+        transform: scaleY(1) translateZ(0);
+    }
+}
 @keyframes pullDown {
     0% {
         opacity: 0;
@@ -2165,34 +2375,39 @@ div {
         transform: scaleY(1) translateZ(0);
     }
 }
-
-@-webkit-keyframes pullDown {
+@-webkit-keyframes stretchRight {
     0% {
         opacity: 0;
-        -webkit-transform: scaleY(0.1) translateZ(0);
+        -webkit-transform: scaleX(0.3);
+        transform: scaleX(0.3);
     }
     40% {
         opacity: 1;
-        -webkit-transform: scaleY(1.02) translateZ(0);
+        -webkit-transform: scaleX(1.02);
+        transform: scaleX(1.02);
     }
     60% {
-        -webkit-transform: scaleY(0.98) translateZ(0);
+        -webkit-transform: scaleX(0.98);
+        transform: scaleX(0.98);
     }
     80% {
-        -webkit-transform: scaleY(1.01) translateZ(0);
+        -webkit-transform: scaleX(1.01);
+        transform: scaleX(1.01);
     }
     100% {
         opacity: 1;
-        -webkit-transform: scaleY(0.98) translateZ(0);
+        -webkit-transform: scaleX(0.98);
+        transform: scaleX(0.98);
     }
     80% {
-        -webkit-transform: scaleY(1.01) translateZ(0);
+        -webkit-transform: scaleX(1.01);
+        transform: scaleX(1.01);
     }
     100% {
-        -webkit-transform: scaleY(1) translateZ(0);
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
     }
 }
-
 @keyframes stretchRight {
     0% {
         opacity: 0;
@@ -2240,34 +2455,35 @@ div {
         transform: scaleX(1);
     }
 }
-
-@-webkit-keyframes stretchRight {
+@-webkit-keyframes slideRight {
     0% {
         opacity: 0;
-        -webkit-transform: scaleX(0.3);
+        -webkit-transform: translateX(-150%);
+        transform: translateX(-150%);
     }
-    40% {
+    50% {
         opacity: 1;
-        -webkit-transform: scaleX(1.02);
+        -webkit-transform: translateX(8%);
+        transform: translateX(8%);
     }
-    60% {
-        -webkit-transform: scaleX(0.98);
+    65% {
+        -webkit-transform: translateX(-4%);
+        transform: translateX(-4%);
     }
     80% {
-        -webkit-transform: scaleX(1.01);
+        -webkit-transform: translateX(4%);
+        transform: translateX(4%);
+    }
+    95% {
+        -webkit-transform: translateX(-2%);
+        transform: translateX(-2%);
     }
     100% {
         opacity: 1;
-        -webkit-transform: scaleX(0.98);
-    }
-    80% {
-        -webkit-transform: scaleX(1.01);
-    }
-    100% {
-        -webkit-transform: scaleX(1);
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
     }
 }
-
 @keyframes slideRight {
     0% {
         opacity: 0;
@@ -2310,29 +2526,7 @@ div {
     }
 }
 
-@-webkit-keyframes slideRight {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateX(-150%);
-    }
-    50% {
-        opacity: 1;
-        -webkit-transform: translateX(8%);
-    }
-    65% {
-        -webkit-transform: translateX(-4%);
-    }
-    80% {
-        -webkit-transform: translateX(4%);
-    }
-    95% {
-        -webkit-transform: translateX(-2%);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translateX(0%);
-    }
-}
+
 @-webkit-keyframes fadeInDown {
     0% {
         opacity: 0;
@@ -2383,16 +2577,20 @@ div {
 @-webkit-keyframes flipInX {
     0% {
         -webkit-transform: perspective(400px) rotateX(90deg);
+        transform: perspective(400px) rotateX(90deg);
         opacity: 0;
     }
     40% {
         -webkit-transform: perspective(400px) rotateX(-10deg);
+        transform: perspective(400px) rotateX(-10deg);
     }
     70% {
         -webkit-transform: perspective(400px) rotateX(10deg);
+        transform: perspective(400px) rotateX(10deg);
     }
     100% {
         -webkit-transform: perspective(400px) rotateX(0deg);
+        transform: perspective(400px) rotateX(0deg);
         opacity: 1;
     }
 }
